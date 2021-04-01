@@ -1,0 +1,1810 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/30/2020 8:54:50 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="Raja"
+  DTS:CreatorName="Raja\Raja"
+  DTS:DTSID="{B162F317-51C6-48DA-B456-DB65860F398E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{627DDEF0-EA34-4F1A-A924-55922ADAB1D7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connection Manager for Regions]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2ACDAA6D-F114-4D17-A94B-A3A21F3D3E6C}"
+      DTS:ObjectName="Connection Manager for Regions">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Raja\Downloads\Project\uszips.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zip"
+              DTS:DTSID="{2F5C51EA-1B4C-437E-A0BF-2A965310E2CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{7B03FBDC-7AE3-41AF-8F9D-D3F4E1442412}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lng"
+              DTS:DTSID="{87127108-439B-46EB-9838-DDCE2A8F5F86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{B1BFDD0B-FDA5-4EE1-8DB1-70BC60D6AC62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state_id"
+              DTS:DTSID="{9E90A5ED-24C2-43CC-9A03-A01FD7E62AF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state_name"
+              DTS:DTSID="{1C362ABA-6EF9-4DEC-B662-8A41304E4A3E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zcta"
+              DTS:DTSID="{D6B8B098-5E28-4B4D-ACE2-BC1EFAF22B94}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="parent_zcta"
+              DTS:DTSID="{023E37DC-B2D3-4EF2-9DD0-DB0E5243D3F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="population"
+              DTS:DTSID="{1DD7905B-8F37-4FB2-ACD6-F86BBF2534D1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="density"
+              DTS:DTSID="{6877F790-81A1-46A5-B0DE-A0A41D344D96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_fips"
+              DTS:DTSID="{17D71CA2-712F-4CF4-98DE-710A1C097574}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_name"
+              DTS:DTSID="{F624F22E-374F-41EA-A20B-721C246FCBB3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_weights"
+              DTS:DTSID="{31F18462-6975-460D-BE8C-BE35F88016DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_names_all"
+              DTS:DTSID="{D26A37AB-77FA-4653-8DAC-5C1E5B2F3F42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_fips_all"
+              DTS:DTSID="{A61645C8-12F9-4E28-8062-3716B5B5064A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="imprecise"
+              DTS:DTSID="{5D558663-5945-42D3-B7C8-DC82E2756764}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="military"
+              DTS:DTSID="{962C1E1C-C24F-402F-8CA5-A3D4E0BFD5DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="timezone"
+              DTS:DTSID="{2D738561-7A54-4FC3-82EC-23C3AFACCC2D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Raja\SQLSERVER2019.DWBI_Project]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E09B9B32-FCFC-4940-A7A2-B41577D68158}"
+      DTS:ObjectName="Raja\SQLSERVER2019.DWBI_Project">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=Raja\SQLSERVER2019;Initial Catalog=DWBI_Project;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5434DC0D-0D74-49A0-8C2C-AADAF01BD698}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{E09B9B32-FCFC-4940-A7A2-B41577D68158}"
+          SQLTask:SqlStatementSource="truncate table Region_Staging" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loading data from staging to dimensional model"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{87093C9D-B8C9-4F69-9876-7A620C1B5544}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loading data from staging to dimensional model"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Loading data from staging to dimensional model\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input].Columns[zipcode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="zipcode"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[zipcode]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input].Columns[Formated State]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Formated State"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input].Columns[Formated City]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Formated City"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated City]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input].Columns[Formated County]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Formated County"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated County]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input].Columns[Formated State Code]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Formated State Code"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State Code]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted zipcode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      length="5"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted zipcode]"
+                      name="Converted zipcode"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[zipcode]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted State]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      length="25"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted State]"
+                      name="Converted State"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      length="25"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted City]"
+                      name="Converted City"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated City]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted County]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      length="25"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted County]"
+                      name="Converted County"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated County]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted State Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      length="3"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted State Code]"
+                      name="Converted State Code"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State Code]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Loading data from staging to dimensional model\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input].Columns[State]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="State"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input].Columns[State_Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="State_Code"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State_Code]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input].Columns[County_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="County_Name"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[County_Name]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input].Columns[City_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="City_Name"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[City_Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State]"
+                      name="Formated State"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[LOWER](#{Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LOWER(State)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated City]"
+                      name="Formated City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[LOWER](#{Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[City_Name]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LOWER(City_Name)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated County]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated County]"
+                      name="Formated County"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[LOWER](#{Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[County_Name]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LOWER(County_Name)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State Code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Formated State Code]"
+                      name="Formated State Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER](#{Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State_Code]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(State_Code)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Timestamp]"
+                      dataType="date"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Timestamp]"
+                      name="Timestamp"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[System::StartTime]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[System::StartTime]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Loading data from staging to dimensional model\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Dim_Region]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Raja\SQLSERVER2019.DWBI_Project]"
+                  connectionManagerRefId="Package.ConnectionManagers[Raja\SQLSERVER2019.DWBI_Project]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Converted zipcode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Converted zipcode"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[zipcode]"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted zipcode]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Converted State]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="Converted State"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted State]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Converted State Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Converted State Code"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State_Code]"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted State Code]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Converted County]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="Converted County"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[County_Name]"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted County]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Converted City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="Converted City"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City_Name]"
+                      lineageId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output].Columns[Converted City]" />
+                    <inputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Timestamp]"
+                      cachedDataType="date"
+                      cachedName="Timestamp"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeStamp]"
+                      lineageId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output].Columns[Timestamp]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Region_Code]"
+                      dataType="i4"
+                      name="Region_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[zipcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="zipcode" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="State_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[County_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="County_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="City_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeStamp]"
+                      dataType="dbTimeStamp"
+                      name="TimeStamp" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Loading data from staging to dimensional model\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Region_Staging]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Loading data from staging to dimensional model\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Raja\SQLSERVER2019.DWBI_Project]"
+                  connectionManagerRefId="Package.ConnectionManagers[Raja\SQLSERVER2019.DWBI_Project]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[zipcode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zipcode]"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[zipcode]"
+                      name="zipcode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State]"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State_Code]"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[State_Code]"
+                      name="State_Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[County_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[County_Name]"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[County_Name]"
+                      name="County_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[City_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[City_Name]"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].Columns[City_Name]"
+                      name="City_Name"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zipcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="zipcode" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[County_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="County_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[City_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City_Name" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zipcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zipcode]"
+                      name="zipcode" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State]"
+                      name="State" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State_Code]"
+                      name="State_Code" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[County_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[County_Name]"
+                      name="County_Name" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[City_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[City_Name]"
+                      name="City_Name" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Loading data from staging to dimensional model.Paths[Data Conversion Output]"
+              endId="Package\Loading data from staging to dimensional model\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Loading data from staging to dimensional model\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Loading data from staging to dimensional model.Paths[Derived Column Output]"
+              endId="Package\Loading data from staging to dimensional model\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Loading data from staging to dimensional model\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Loading data from staging to dimensional model.Paths[OLE DB Source Output]"
+              endId="Package\Loading data from staging to dimensional model\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Loading data from staging to dimensional model\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loading Regions Data to Staging Table"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{58e22490-7e5d-49de-afe9-cc4f191bba7e}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loading Regions Data to Staging Table"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Loading Regions Data to Staging Table\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Loading Regions Data to Staging Table\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Connection Manager for Regions]"
+                  connectionManagerRefId="Package.ConnectionManagers[Connection Manager for Regions]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[zip]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[zip]"
+                      length="50"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[zip]"
+                      name="zip"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      length="50"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[state_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state_name]"
+                      length="50"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[state_name]"
+                      name="state_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[state_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state_id]"
+                      length="50"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[state_id]"
+                      name="state_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[county_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county_name]"
+                      length="50"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[county_name]"
+                      name="county_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[zip]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="zip" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="lat" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lng]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="lng" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="state_id" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="state_name" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[zcta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="zcta" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[parent_zcta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="parent_zcta" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[density]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="density" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county_fips]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="county_fips" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="county_name" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county_weights]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="county_weights" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county_names_all]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="county_names_all" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county_fips_all]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="county_fips_all" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[imprecise]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="imprecise" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[military]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="military" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[timezone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="timezone" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Loading Regions Data to Staging Table\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Region_Staging]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Raja\SQLSERVER2019.DWBI_Project]"
+                  connectionManagerRefId="Package.ConnectionManagers[Raja\SQLSERVER2019.DWBI_Project]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[city]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City_Name]"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
+                    <inputColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[state_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="state_name"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[state_name]" />
+                    <inputColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[state_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="state_id"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State_Code]"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[state_id]" />
+                    <inputColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[county_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="county_name"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[County_Name]"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[county_name]" />
+                    <inputColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[zip]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="zip"
+                      externalMetadataColumnId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[zipcode]"
+                      lineageId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output].Columns[zip]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[zipcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="zipcode" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[County_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="County_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City_Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Loading Regions Data to Staging Table.Paths[Flat File Source Output]"
+              endId="Package\Loading Regions Data to Staging Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Loading Regions Data to Staging Table\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{E0D1ED37-B5B8-43CE-843E-B29C810EC1A9}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Loading Regions Data to Staging Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{DC06CC2B-10F9-494C-ADBB-944C874330A5}"
+      DTS:From="Package\Loading Regions Data to Staging Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Loading data from staging to dimensional model" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="305.6,41.6"
+          Id="Package\Loading data from staging to dimensional model"
+          TopLeft="451.928578520307,218.264708445559" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="61.9285713677504,32.6176465976609" />
+        <NodeLayout
+          Size="261.6,41.6"
+          Id="Package\Loading Regions Data to Staging Table"
+          TopLeft="234.07143195308,127.158823389991" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="143.12857136775,74.2176465976609">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="221.742860585329,52.9411767923296"
+              Start="0,0"
+              End="221.742860585329,45.4411767923296">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.4705883961648" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.4705883961648"
+                    Point2="0,26.4705883961648"
+                    Point3="4,26.4705883961648" />
+                  <mssgle:LineSegment
+                    End="217.742860585329,26.4705883961648" />
+                  <mssgle:CubicBezierSegment
+                    Point1="217.742860585329,26.4705883961648"
+                    Point2="221.742860585329,26.4705883961648"
+                    Point3="221.742860585329,30.4705883961648" />
+                  <mssgle:LineSegment
+                    End="221.742860585329,45.4411767923296" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="364.87143195308,168.758823389991">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="239.857146567228,49.5058850555685"
+              Start="0,0"
+              End="239.857146567228,42.0058850555685">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.7529425277843" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.7529425277843"
+                    Point2="0,24.7529425277843"
+                    Point3="4,24.7529425277843" />
+                  <mssgle:LineSegment
+                    End="235.857146567228,24.7529425277843" />
+                  <mssgle:CubicBezierSegment
+                    Point1="235.857146567228,24.7529425277843"
+                    Point2="239.857146567228,24.7529425277843"
+                    Point3="239.857146567228,28.7529425277843" />
+                  <mssgle:LineSegment
+                    End="239.857146567228,42.0058850555685" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Loading data from staging to dimensional model">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Loading data from staging to dimensional model\OLE DB Source"
+          TopLeft="100.5,24.5" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Loading data from staging to dimensional model\Data Conversion"
+          TopLeft="598,28" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Loading data from staging to dimensional model\OLE DB Destination"
+          TopLeft="594,126" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Loading data from staging to dimensional model\Derived Column"
+          TopLeft="350,28" />
+        <EdgeLayout
+          Id="Package\Loading data from staging to dimensional model.Paths[OLE DB Source Output]"
+          TopLeft="250.1,47.05">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99.9,0"
+              Start="0,0"
+              End="92.4,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="92.4,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loading data from staging to dimensional model.Paths[Derived Column Output]"
+          TopLeft="502.8,48.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="95.2,0"
+              Start="0,0"
+              End="87.7,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="87.7,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loading data from staging to dimensional model.Paths[Data Conversion Output]"
+          TopLeft="677.4,69.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.4"
+              Start="0,0"
+              End="0,48.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loading data from staging to dimensional model\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loading data from staging to dimensional model\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Loading Regions Data to Staging Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Loading Regions Data to Staging Table\OLE DB Destination"
+          TopLeft="309.071433741219,64.3823537669791" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Loading Regions Data to Staging Table\Flat File Source"
+          TopLeft="66.9285724746938,65.9117655531345" />
+        <EdgeLayout
+          Id="Package\Loading Regions Data to Staging Table.Paths[Flat File Source Output]"
+          TopLeft="217.328572474694,85.9470596600568">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="91.7428612665252,0"
+              Start="0,0"
+              End="84.2428612665252,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="84.2428612665252,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loading Regions Data to Staging Table\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
